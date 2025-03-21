@@ -35,7 +35,7 @@ public:
         cin.ignore();
 
     	cout << "Masukkan Alamat anda: ";
-		getline(cin, alamat);
+	getline(cin, alamat);
 		
         cout << "Masukkan RT Anda: ";
         cin >> rt;
