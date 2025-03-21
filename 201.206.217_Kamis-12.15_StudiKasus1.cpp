@@ -1,3 +1,8 @@
+// Pembuatan KTP oleh Kelas D
+// 1. Zahra Salsabila - 2400018206
+// 2. Catur Ariyan Ningsih - 2400018201
+// 3. Wa Ode Nur Rahma A. - 2400018217
+
 #include <iostream>
 #include <string>
 using namespace std;
