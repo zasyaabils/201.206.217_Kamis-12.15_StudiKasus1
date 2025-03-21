@@ -4,6 +4,7 @@ using namespace std;
 
 class DataPenduduk {
 private:
+	
     string nik, nama, tempatLahir, keldes, pekerjaan, agama, statusPernikahan, statusKewarganegaraan, kabupaten, provinsi, alamat, kecamatan, jenisk;
     int rt, rw;
     char golDarah;
@@ -35,8 +36,7 @@ public:
 
     	cout << "Masukkan Alamat anda: ";
         cin >> alamat;
-        cin.ignore();
-
+		getline(cin, alamat);
         cout << "Masukkan RT Anda: ";
         cin >> rt;
         cin.ignore();
@@ -62,6 +62,8 @@ public:
         
         cout << "Masukkan Status Kewarganegaraan Anda: ";
         getline(cin, statusKewarganegaraan);
+        
+        cout << endl;
     }
 
     void tampilkanData() {
@@ -70,7 +72,7 @@ public:
         cout << "NIK               : " << nik << endl;
         cout << "Nama              : " << nama << endl;
         cout << "Tempat/Tgl Lahir  : " << tempatLahir << endl;
-        cout << "Jenis Kelamin     : " << jenisk << "\tGol Darah    : " << golDarah << endl;
+        cout << "Jenis Kelamin     : " << jenisk << "\tGol Darah  : " << golDarah << endl;
         cout << "Alamat    		: " << alamat << endl;
         cout << "\tRT/RW           : " << rt << "/" << rw << endl;
         cout << "\tKel/Desa        : " << keldes << endl;
@@ -78,7 +80,7 @@ public:
         cout << "Agama             : " << agama << endl;
         cout << "Status Pernikahan : " << statusPernikahan << endl;
         cout << "Kewarganegaraan   : " << statusKewarganegaraan << endl;
-        cout << "Berlaku Hingga    :  SEUMUR HIDUP";
+        cout << "Berlaku Hingga    : SEUMUR HIDUP";
     }
 };
 
