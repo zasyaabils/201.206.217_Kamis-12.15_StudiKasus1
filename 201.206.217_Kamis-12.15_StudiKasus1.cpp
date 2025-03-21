@@ -35,8 +35,8 @@ public:
         cin.ignore();
 
     	cout << "Masukkan Alamat anda: ";
-        cin >> alamat;
 		getline(cin, alamat);
+		
         cout << "Masukkan RT Anda: ";
         cin >> rt;
         cin.ignore();
@@ -72,8 +72,8 @@ public:
         cout << "NIK               : " << nik << endl;
         cout << "Nama              : " << nama << endl;
         cout << "Tempat/Tgl Lahir  : " << tempatLahir << endl;
-        cout << "Jenis Kelamin     : " << jenisk << "\tGol Darah  : " << golDarah << endl;
-        cout << "Alamat    		: " << alamat << endl;
+        cout << "Jenis Kelamin     : " << jenisk << "\t\tGol Darah  : " << golDarah << endl;
+        cout << "Alamat            : " << alamat << endl;
         cout << "\tRT/RW           : " << rt << "/" << rw << endl;
         cout << "\tKel/Desa        : " << keldes << endl;
         cout << "\tKecamatan       : " << kecamatan << endl;
